@@ -7,11 +7,10 @@
 /build
 /captures
 .externalNativeBuild
-/.idea
-.idea/misc.xml
-.gitignore
 *.[oa]
-.DS_Store
-.gitignore
 
+/.gitignore
+.idea/modules.xml
+.idea/vcs.xml
+/.idea/libraries/misc.xml
 
