@@ -1,23 +1,35 @@
 package com.example.dinglong.gointerview;
 
-import android.app.Application;
 import android.content.Context;
 import android.support.multidex.MultiDex;
+
+import dagger.android.AndroidInjector;
+import dagger.android.DaggerApplication;
 
 /**
  * Created by dinglong on 2018/5/2.
  * 类说明:
  */
 
-public class App extends Application {
+public class App extends DaggerApplication {
     public static App context = null;
 
 
 
     @Override
     public void onCreate() {
-        super.onCreate();
         context = this;
+        injectModule();
+        super.onCreate();
+    }
+
+    @Override
+    protected AndroidInjector<? extends DaggerApplication> applicationInjector() {
+        return DaggerAppComponent.builder().application(this).build();
+    }
+
+    private void injectModule() {
+
     }
 
     @Override
