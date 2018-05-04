@@ -39,5 +39,12 @@ ext {
     espressoVersion = '3.0.1'
 
     multidexVersion = '1.0.3'
-    daggerVersion = '2.11'
+    daggerVersion = '2.15'
+
+    retrofitVersion = '2.3.0'
+    okhttpVersion = '3.9.1'
+    rxjava2adapterVersion = '1.0.0'
+    rxjava2Version = '2.1.8'
+    rxandroidVersion = '2.0.1'
+
 }

@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId "com.example.dinglong.gointerview"
+        applicationId "com.dl.cn"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode rootProject.ext.versionCode
@@ -41,5 +41,19 @@ dependencies {
     compile "com.google.dagger:dagger-android:$rootProject.daggerVersion"
     compile "com.google.dagger:dagger-android-support:$rootProject.daggerVersion"
     annotationProcessor "com.google.dagger:dagger-android-processor:$rootProject.daggerVersion"
+
+    //gson  okhttp3  retrofit 2.0
+//    compile "com.google.code.gson:gson:$rootProject.retrofitVersion"
+
+    compile "com.squareup.retrofit2:retrofit:$rootProject.retrofitVersion"
+//Gson converter
+    compile "com.squareup.retrofit2:converter-gson:$rootProject.retrofitVersion"
+    compile "com.squareup.retrofit2:converter-scalars:$rootProject.retrofitVersion"
+//Okhttp
+    compile "com.squareup.okhttp3:okhttp:$rootProject.okhttpVersion"
+//RxJava　adapter
+    compile "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:$rootProject.rxjava2adapterVersion"
+    compile "io.reactivex.rxjava2:rxjava:$rootProject.rxjava2Version"
+    compile "io.reactivex.rxjava2:rxandroid:$rootProject.rxandroidVersion"
 
 }
